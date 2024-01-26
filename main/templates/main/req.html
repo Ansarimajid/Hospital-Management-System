@@ -1,0 +1,48 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block contentTitle %}
+    Add Request
+{% endblock contentTitle %}
+
+{% block content %}
+
+    <form action="" method="post">
+    {% csrf_token %}
+        
+        <div class="container">
+            <div class="patient-form ">
+                <div class="row">
+                    <div class="form-field col-md-6">
+                        <input type="text" id="name" class="input-text" type="text" name="name" placeholder="Name">
+                    </div>
+
+                    <div class="form-field col-md-6">
+                        <input type="text" id="phone_num" class="input-text" type="text" name="phone_num" placeholder="Phone no.">
+                    </div>
+
+                    <div class="form-field col-md-12">
+                        <input type="text" id="patient_relative_contact" class="input-text" type="text" name="address" placeholder="Address">
+                    </div>
+
+                    <div class="form-field col-md-6" style="padding-bottom: 4px;">
+                        <input type="text" id="prior_ailments" class="form-control input-text mb-0 p-0 " style="outline:none" type="text" name="prior_ailments" placeholder="Prior ailments if any, eg: Diabetes, Thyroid">
+                    </div>
+                </div>
+
+
+            </div>  
+
+
+                <!-- </div> -->
+            </div>
+            </div>
+            
+        </div>
+
+        </div>
+        </div>
+    </div>
+        <button class="btn col-lg-4 btn-block mx-auto btn-info mb-4" >Add Request</button>
+    </form>
+{% endblock content %}
